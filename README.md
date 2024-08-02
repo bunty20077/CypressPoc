@@ -79,11 +79,15 @@ Add Below Lines in package.json
 
 ```javascript
   "scripts": {
-    "test": "node_modules/.bin/cypress run",
     "runtests": "npm run ",
-    "test:dev": "CYPRESS_ENV=development npm run test",
-    "test:staging": "CYPRESS_ENV=staging npm run test",
-    "test:prod": "CYPRESS_ENV=production npm run test"
+    "test:api": "node_modules/.bin/cypress run --spec 'cypress/e2e/api/**/*'",
+    "test:ui": "node_modules/.bin/cypress run --spec 'cypress/e2e/ui/**/*'",   
+    "test:api:dev": "CYPRESS_ENV=development npm run test:api",
+    "test:api:staging": "CYPRESS_ENV=staging npm run test:api",
+    "test:api:prod": "CYPRESS_ENV=production npm run test:api",
+    "test:ui:dev": "CYPRESS_ENV=development npm run test:ui",
+    "test:ui:staging": "CYPRESS_ENV=staging npm run test:ui",
+    "test:ui:prod": "CYPRESS_ENV=production npm run test:ui"
   },
 
 ```
@@ -91,10 +95,16 @@ Add Below Lines in package.json
 
 ## Running Tests
 
-Command to run a tests suite in Local from Terminal with environment parameterization
+Command to run UI tests suite in Local from Terminal with environment parameterization
 
 ```bash
-npm run runtests test:dev  
+npm run runtests test:ui:dev   
+```
+
+Command to run API tests suite in Local from Terminal with environment parameterization
+
+```bash
+npm run runtests test:api:dev   
 ```
 Command to run a single suite in BrowserStack and in Browserstack
 
