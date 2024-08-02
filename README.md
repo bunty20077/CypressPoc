@@ -80,7 +80,10 @@ Add Below Lines in package.json
 ```javascript
   "scripts": {
     "test": "node_modules/.bin/cypress run",
-    "runtests": "npm run test -- "
+    "runtests": "npm run ",
+    "test:dev": "CYPRESS_ENV=development npm run test",
+    "test:staging": "CYPRESS_ENV=staging npm run test",
+    "test:prod": "CYPRESS_ENV=production npm run test"
   },
 
 ```
