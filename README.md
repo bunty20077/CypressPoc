@@ -55,6 +55,7 @@ Create a new npm project
 -------------------------
 mkdir <projectname>
 cd <projectname>
+TEST
 
 Initialise folder with new npm package
 ---------------------------------------
