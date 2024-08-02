@@ -88,10 +88,10 @@ Add Below Lines in package.json
 
 ## Running Tests
 
-Command to run a tests suite in Local from Terminal
+Command to run a tests suite in Local from Terminal with environment parameterization
 
 ```bash
-npm run runtests
+npm run runtests test:dev  
 ```
 Command to run a single suite in BrowserStack and in Browserstack
 
