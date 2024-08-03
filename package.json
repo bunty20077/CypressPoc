@@ -4,11 +4,15 @@
   "description": "This is a starter kit for API and UI Testing Cypress with JS",
   "main": "index.js",
   "scripts": {
-    "test": "node_modules/.bin/cypress run",
     "runtests": "npm run ",
-    "test:dev": "CYPRESS_ENV=development npm run test",
-    "test:staging": "CYPRESS_ENV=staging npm run test",
-    "test:prod": "CYPRESS_ENV=production npm run test"
+    "test:api": "node_modules/.bin/cypress run --spec 'cypress/e2e/api/**/*'",
+    "test:ui": "node_modules/.bin/cypress run --spec 'cypress/e2e/ui/**/*'",   
+    "test:api:dev": "CYPRESS_ENV=development npm run test:api",
+    "test:api:staging": "CYPRESS_ENV=staging npm run test:api",
+    "test:api:prod": "CYPRESS_ENV=production npm run test:api",
+    "test:ui:dev": "CYPRESS_ENV=development npm run test:ui",
+    "test:ui:staging": "CYPRESS_ENV=staging npm run test:ui",
+    "test:ui:prod": "CYPRESS_ENV=production npm run test:ui"
   },
   "repository": {
     "type": "git",

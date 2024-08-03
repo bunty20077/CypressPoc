@@ -91,7 +91,12 @@ Add Below Lines in package.json
   },
 
 ```
+Tips
 
+```
+  Add the below line in spec file to receive Autosuggestion in Cypress
+  /// <reference types="Cypress" />
+```
 
 ## Running Tests
 
