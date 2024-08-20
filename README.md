@@ -188,3 +188,32 @@ Need to install plugin from Global Configuration
   allure
   allure-commands
 ```
+
+## Frequently Used Commands
+
+Frequently used Cypress Commands for UI Testing
+```bash
+ 1. visit()     -> Open a specific URL ( Like .get() in selenium )
+ 2. get()       -> Find a locator .
+ 3. type()      -> Entering data from keyboard . ( sendkeys() in Selenium)
+ 4. click()     -> To click something.
+ 5. check()     -> To check checkbox and radio buttons.
+ 6. uncheck()   -> To uncheck checkbox and radio buttons.
+ 7. select()      -> To select elements from dropdown
+ 8. cy.wait(200)  -> Pause execution
+ 9. cy.intercept()-> Intercept and mock network.
+ 10.cy.task()       -> Run custom node js code.
+ 11.cy.scrollTo()   -> Scroll to specific element on the page.
+ 12.cy.getCookie()  -> Retrieve a cookie with specific name from the current page.
+ 13.cy.clearCookies()-> Delete all cookies on the current page.
+ 14.cy.url()         -> Get the current URL of the page being tested.
+ 15.cy.location()    -> Get current location of the page being tested.(URL,hostname,pathname)
+ 16. dblclick()      -> Stimulate a double-click on an element.
+ 17. rightclick()    -> Perform right click
+```
+
+Frequently used Cypress Commands for API Testing
+```bash
+ 1. request()     -> Get Request for API.
+ 2.  
+```
