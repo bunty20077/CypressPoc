@@ -4,19 +4,16 @@ const environment = process.env.CYPRESS_ENV || 'development';
 
 const config = {
   development: {
-    baseUrl: 'https://pokeapi.co/api/v2/pokemon',
-    apiUrl: 'https://pokeapi.co/api/v2/pokemon',
-    uiUrl: 'https://pokeapi.co/'
+    apiUrl: 'https://petstore.swagger.io/v2',
+    uiUrl: 'https://parabank.parasoft.com/parabank/index.htm'
   },
   staging: {
-    baseUrl: 'https://staging.example.com',
     apiUrl: 'https://staging.example.com/api',
-    uiUrl: 'https://staging.pokeapi.co/'
+    uiUrl: 'https://parabank.parasoft.com/parabank/index.htm'
   },
   production: {
-    baseUrl: 'https://example.com',
     apiUrl: 'https://example.com/api',
-    uiUrl: 'https://pokeapi.co/'
+    uiUrl: 'https://parabank.parasoft.com/parabank/index.htm'
   }
 };
 
