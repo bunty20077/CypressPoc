@@ -65,6 +65,10 @@ Install Cypress
 ------------------
 npm install cypress --save-dev
 
+Install mochawesome
+---------------------------------------
+npm install mochawesome --save-dev
+
 Cypress Command List
 -----------------------
 https://docs.cypress.io/api/table-of-contents
@@ -81,7 +85,7 @@ Add Below Lines in package.json
   "scripts": {
     "runtests": "npm run ",
     "test:api": "node_modules/.bin/cypress run --spec 'cypress/e2e/api/**/*'",
-    "test:ui": "node_modules/.bin/cypress run --spec 'cypress/e2e/ui/**/*'",   
+    "test:ui": "node_modules/.bin/cypress run --spec 'cypress/e2e/ui/**/*'", 
     "test:api:dev": "CYPRESS_ENV=development npm run test:api",
     "test:api:staging": "CYPRESS_ENV=staging npm run test:api",
     "test:api:prod": "CYPRESS_ENV=production npm run test:api",
@@ -114,7 +118,7 @@ npm run runtests test:api:dev
 Command to run a single suite in BrowserStack and in Browserstack
 
 ```bash
-mvn clean test -DsuiteXmlFile=testng.xml -DrunOn=browserstack -Dplatform=ios 
+
 ```
 Command to run a group of suites
 ```bash

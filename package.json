@@ -6,7 +6,7 @@
   "scripts": {
     "runtests": "npm run ",
     "test:api": "node_modules/.bin/cypress run --spec 'cypress/e2e/api/**/*'",
-    "test:ui": "node_modules/.bin/cypress run --spec 'cypress/e2e/ui/**/*' --browser=chrome",   
+    "test:ui": "node_modules/.bin/cypress run --spec 'cypress/e2e/ui/**/*' --browser=chrome",
     "test:api:dev": "CYPRESS_ENV=development npm run test:api",
     "test:api:staging": "CYPRESS_ENV=staging npm run test:api",
     "test:api:prod": "CYPRESS_ENV=production npm run test:api",
@@ -30,6 +30,9 @@
   },
   "homepage": "https://github.com/bunty20077/CypressPoc#readme",
   "devDependencies": {
-    "cypress": "^13.13.2"
+    "@testing-library/cypress": "^10.0.2",
+    "cypress": "^13.16.1",
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "mochawesome": "^7.1.3"
   }
 }
