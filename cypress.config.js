@@ -22,6 +22,7 @@ const config = {
 module.exports = ({
   env: config[environment],
   reporter: 'mochawesome',
+  video: true,
   reporterOptions: {
     reportDir: 'cypress/reports', // Directory for reports
     charts: true, // Enable charts
